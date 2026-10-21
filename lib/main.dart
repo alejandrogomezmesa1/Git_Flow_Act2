@@ -1,14 +1,8 @@
 import 'dart:io';
 import 'agregar.dart';
-
+import 'contact.dart';
 import 'gestion.dart';
-
-// El Aprendiz 2 definirá los atributos de esta clase
-class Contacto{
-  String nombre;
-  String telefono;
-  Contacto(this.nombre, this.telefono);
-}
+import 'listar.dart';
 
 void main() {
   List<Contacto> agenda = [];
@@ -30,7 +24,7 @@ void main() {
         agregarContacto(agenda);
         break;
       case '2':
-        // TODO: Aprendiz 2 - Implementar lógica para listar
+        listarContactos(agenda);
         break;
       case '3':
         buscarContacto(agenda);

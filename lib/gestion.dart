@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import 'main.dart';
+import 'contact.dart';
 
 // Aprendiz 3 - Opción 3: busca contactos cuyo nombre contenga el texto ingresado
 void buscarContacto(List<Contacto> agenda) {

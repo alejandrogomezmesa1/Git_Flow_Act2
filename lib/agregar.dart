@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import 'main.dart';
+import 'contact.dart';
 
 // Aprendiz 1 - Opción 1: pide nombre y teléfono y agrega el contacto a la agenda
 void agregarContacto(List<Contacto> agenda) {
