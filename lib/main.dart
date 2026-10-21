@@ -1,6 +1,8 @@
 import 'dart:io';
 import 'agregar.dart';
 
+import 'gestion.dart';
+
 // El Aprendiz 2 definirá los atributos de esta clase
 class Contacto{
   String nombre;
@@ -31,10 +33,10 @@ void main() {
         // TODO: Aprendiz 2 - Implementar lógica para listar
         break;
       case '3':
-        // TODO: Aprendiz 3 - Implementar lógica para buscar
+        buscarContacto(agenda);
         break;
       case '4':
-        // TODO: Aprendiz 3 - Implementar lógica para eliminar
+        eliminarContacto(agenda);
         break;
       case '5':
         print('Saliendo de la agenda...');
