@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'agregar.dart';
 
 // El Aprendiz 2 definirá los atributos de esta clase
 class Contacto{
@@ -24,7 +25,7 @@ void main() {
 
     switch (opcion) {
       case '1':
-        // TODO: Aprendiz 1 - Implementar lógica para agregar
+        agregarContacto(agenda);
         break;
       case '2':
         // TODO: Aprendiz 2 - Implementar lógica para listar
