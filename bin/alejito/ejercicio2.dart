@@ -10,9 +10,9 @@ class Automovil {
   Automovil(this.velocidad, this.tiempo, this.distancia);
 
   void dataInput(){
-    stdout.write("Ingrese la velocidad del automovil");
+    stdout.write("Ingrese la velocidad del automovil: ");
     velocidad = double.parse(stdin.readLineSync()!);
-    stdout.write("Ingrese el tiempo del automovil");
+    stdout.write("Ingrese el tiempo del automovil: ");
     tiempo = double.parse(stdin.readLineSync()!);
     
   }
@@ -25,4 +25,11 @@ class Automovil {
   String mostrarDatos(){
     return 'Datos del automovil\n Velocidad: $velocidad\n Tiempo: $tiempo\n Distancia: $distancia';
   }
+}
+
+void main() {
+  Automovil a1 = Automovil(0, 0, 0);
+  a1.dataInput();
+  a1.calcularDistancia();
+  print(a1.mostrarDatos());
 }
